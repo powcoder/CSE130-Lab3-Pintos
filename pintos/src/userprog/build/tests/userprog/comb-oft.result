@@ -1,0 +1,31 @@
+FAIL
+Test output failed to match any acceptable form.
+
+Acceptable output:
+  (comb-oft) begin
+  child-oft: exit(3)
+  child-oft: exit(3)
+  child-oft: exit(3)
+  child-oft: exit(3)
+  child-oft: exit(3)
+  child-oft: exit(3)
+  (comb-oft) fie decriptors match
+  (comb-oft) end
+  comb-oft: exit(0)
+Differences in `diff -u' format:
+  (comb-oft) begin
+  child-oft: exit(3)
+- child-oft: exit(3)
+- child-oft: exit(3)
+- child-oft: exit(3)
+- child-oft: exit(3)
+- child-oft: exit(3)
+- (comb-oft) fie decriptors match
++ child-oft: exit(4)
++ child-oft: exit(5)
++ child-oft: exit(6)
++ child-oft: exit(7)
++ child-oft: exit(8)
++ (comb-oft) fie decriptors DO NOT match
+  (comb-oft) end
+  comb-oft: exit(0)

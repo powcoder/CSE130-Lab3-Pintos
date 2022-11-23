@@ -1,0 +1,55 @@
+FAIL
+Test output failed to match any acceptable form.
+
+Acceptable output:
+  (comb-nested) begin
+  (child-simple) run
+  child-simple: exit(1976)
+  (child-simple) run
+  child-simple: exit(1976)
+  (child-simple) run
+  child-simple: exit(1976)
+  (child-simple) run
+  child-simple: exit(1976)
+  (child-simple) run
+  child-simple: exit(1976)
+  child-nested: exit(0)
+  (child-simple) run
+  child-simple: exit(1976)
+  child-nested: exit(0)
+  (child-simple) run
+  child-simple: exit(1976)
+  (child-simple) run
+  child-simple: exit(1976)
+  (child-simple) run
+  child-simple: exit(1976)
+  child-nested: exit(0)
+  (comb-nested) end
+  comb-nested: exit(0)
+Differences in `diff -u' format:
+  (comb-nested) begin
+  (child-simple) run
+  child-simple: exit(1976)
+  (child-simple) run
+  child-simple: exit(1976)
+  (child-simple) run
+  child-simple: exit(1976)
+  (child-simple) run
+  child-simple: exit(1976)
+  (child-simple) run
+  child-simple: exit(1976)
+- child-nested: exit(0)
+  (child-simple) run
+  child-simple: exit(1976)
+  child-nested: exit(0)
++ (comb-nested) end
++ comb-nested: exit(0)
+  (child-simple) run
+  child-simple: exit(1976)
+  (child-simple) run
+  child-simple: exit(1976)
+- (child-simple) run
+- child-simple: exit(1976)
+- child-nested: exit(0)
+- (comb-nested) end
+- comb-nested: exit(0)

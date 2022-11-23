@@ -1,0 +1,4 @@
+FAIL
+Kernel panic in run: PANIC at ../../userprog/umem.c:42 in throw_segmantation_fault(): assertion `false' failed.
+Call stack: 0xc0029a96 0x65735f77
+Translation of call stack:

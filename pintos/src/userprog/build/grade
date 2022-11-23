@@ -1,0 +1,109 @@
+TOTAL TESTING SCORE: 87.3%
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+SUMMARY BY TEST SET
+
+Test Set                                      Pts Max  % Ttl  % Max
+--------------------------------------------- --- --- ------ ------
+tests/userprog/Rubric.process                   1/  1  40.0%/ 40.0%
+tests/userprog/Rubric.arguments                 4/  4  20.0%/ 20.0%
+tests/userprog/Rubric.systemcalls             122/134  27.3%/ 30.0%
+tests/userprog/Rubric.combined                  0/  3   0.0%/ 10.0%
+--------------------------------------------- --- --- ------ ------
+Total                                                  87.3%/100.0%
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+SUMMARY OF INDIVIDUAL TESTS
+
+Process Creation & Execution (tests/userprog/Rubric.process):
+
+	     1/ 1 tests/userprog/args-none
+
+	- Section summary.
+	      1/  1 tests passed
+	      1/  1 points subtotal
+
+Argument Passing (tests/userprog/Rubric.arguments):
+
+	     1/ 1 tests/userprog/args-single
+	     1/ 1 tests/userprog/args-multiple
+	     1/ 1 tests/userprog/args-many
+	     1/ 1 tests/userprog/args-dbl-space
+
+	- Section summary.
+	      4/  4 tests passed
+	      4/  4 points subtotal
+
+System Calls (tests/userprog/Rubric.systemcalls):
+
+	- "create" system call.
+	    10/10 tests/userprog/create-normal
+	     5/ 5 tests/userprog/create-exists
+	     5/ 5 tests/userprog/create-empty
+	     5/ 5 tests/userprog/create-long
+	     1/ 1 tests/userprog/create-null
+	     1/ 1 tests/userprog/create-bad-ptr
+
+	- "open" system call.
+	    10/10 tests/userprog/open-normal
+	     5/ 5 tests/userprog/open-twice
+	     5/ 5 tests/userprog/open-missing
+	     5/ 5 tests/userprog/open-empty
+	     1/ 1 tests/userprog/open-null
+	     1/ 1 tests/userprog/open-bad-ptr
+
+	- "read" system call.
+	    10/10 tests/userprog/read-normal
+	     1/ 1 tests/userprog/read-zero
+	     1/ 1 tests/userprog/read-stdout
+	     1/ 1 tests/userprog/read-bad-fd
+	     1/ 1 tests/userprog/read-bad-ptr
+
+	- "write" system call.
+	    10/10 tests/userprog/write-normal
+	     1/ 1 tests/userprog/write-zero
+	     1/ 1 tests/userprog/write-stdin
+	     1/ 1 tests/userprog/write-bad-fd
+	     1/ 1 tests/userprog/write-bad-ptr
+
+	- "close" system call.
+	    10/10 tests/userprog/close-normal
+	     5/ 5 tests/userprog/close-twice
+	     1/ 1 tests/userprog/close-stdin
+	     1/ 1 tests/userprog/close-stdout
+	     1/ 1 tests/userprog/close-bad-fd
+
+	- "exec" system call.
+	     5/ 5 tests/userprog/exec-once
+	    10/10 tests/userprog/exec-multiple
+	     5/ 5 tests/userprog/exec-arg
+	     1/ 1 tests/userprog/exec-bad-ptr
+	  ** 0/ 1 tests/userprog/exec-missing
+
+	- "wait" system call.
+	  ** 0/ 5 tests/userprog/wait-simple
+	  ** 0/ 5 tests/userprog/wait-twice
+	     1/ 1 tests/userprog/wait-bad-pid
+	  ** 0/ 1 tests/userprog/wait-killed
+
+	- Section summary.
+	     32/ 36 tests passed
+	    122/134 points subtotal
+
+Combined System Calls (tests/userprog/Rubric.combined):
+
+	- Per Process Open File Table.
+	  ** 0/ 1 tests/userprog/comb-oft
+
+	- Exec Wait Create Open Read Write Close.
+	  ** 0/ 1 tests/userprog/comb-ewcorwc
+
+	- Nested Exec & Wait 
+	  ** 0/ 1 tests/userprog/comb-nested
+
+	- Section summary.
+	      0/  3 tests passed
+	      0/  3 points subtotal
+
